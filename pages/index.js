@@ -1,11 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import { client } from "../client";
+import { createContenfultClient } from "../client";
 
 const Home = ({ teams }) => {
-  console.log(teams);
   return (
     <div className={styles.container}>
       <h1>Formula 1 Teams</h1>
@@ -15,8 +12,21 @@ const Home = ({ teams }) => {
             <li key={index}>
               {team.fields.title}
               <ul>
-                {team.fields.drivers.map((driver, index) => {
-                  return <li key={index}>{driver.fields.name}</li>;
+                {team.fields.drivers?.map((driver, index) => {
+                  return (
+                    <div key={index}>
+                      <li>{driver.fields.name}</li>
+                      <ul>
+                        {driver.fields.winnerIn?.map((circuits, index) => {
+                          return (
+                            <li key={index}>
+                              <small>{circuits.fields.name}</small>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  );
                 })}
               </ul>
             </li>
@@ -29,9 +39,11 @@ const Home = ({ teams }) => {
 
 export default Home;
 
-export async function getStaticProps() {
+export async function getStaticProps({ preview }) {
+  const client = createContenfultClient({ preview });
   const res = await client.getEntries({
     content_type: "teams",
+    include: 2,
   });
 
   return {

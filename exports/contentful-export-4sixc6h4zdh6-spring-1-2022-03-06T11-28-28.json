@@ -1,0 +1,1768 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2022-03-06T00:12:11.173Z",
+        "updatedAt": "2022-03-06T00:22:25.206Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2022-03-06T00:22:25.206Z",
+        "firstPublishedAt": "2022-03-06T00:12:11.771Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "RichText",
+          "localized": true,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code"
+              ],
+              "message": "Only bold, italic, underline, and code marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "teams",
+        "type": "ContentType",
+        "createdAt": "2022-03-06T00:38:37.481Z",
+        "updatedAt": "2022-03-06T00:40:42.237Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-03-06T00:40:42.237Z",
+        "firstPublishedAt": "2022-03-06T00:38:37.882Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Teams",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code"
+              ],
+              "message": "Only bold, italic, underline, and code marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "car",
+          "name": "Car",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "drivers",
+          "name": "Drivers",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "size": {
+                "min": 2,
+                "max": 2
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "driver"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "driver",
+        "type": "ContentType",
+        "createdAt": "2022-03-06T00:40:22.328Z",
+        "updatedAt": "2022-03-06T02:29:20.880Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-03-06T02:29:20.880Z",
+        "firstPublishedAt": "2022-03-06T00:40:22.755Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Driver",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "country",
+          "name": "Country",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "number",
+          "name": "Number",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "winnerIn",
+          "name": "Winner in",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "circuits"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "circuits",
+        "type": "ContentType",
+        "createdAt": "2022-03-06T02:26:34.448Z",
+        "updatedAt": "2022-03-06T02:26:34.799Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2022-03-06T02:26:34.799Z",
+        "firstPublishedAt": "2022-03-06T02:26:34.799Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Circuits",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4sixc6h4zdh6",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 8,
+        "createdAt": "2022-03-06T00:12:11.872Z",
+        "createdBy": {
+          "sys": {
+            "id": "1IgKbcdUoTziJMSi0uFkX5",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-06T00:22:25.848Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1IgKbcdUoTziJMSi0uFkX5",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "page",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4sixc6h4zdh6",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2022-03-06T00:38:37.950Z",
+        "createdBy": {
+          "sys": {
+            "id": "1IgKbcdUoTziJMSi0uFkX5",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-06T00:40:42.873Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1IgKbcdUoTziJMSi0uFkX5",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "teams",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "settings": {
+            "trackingFieldId": "title"
+          },
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "logo",
+          "settings": {
+            "showLinkEntityAction": true,
+            "showCreateEntityAction": false
+          },
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "car",
+          "settings": {
+            "showLinkEntityAction": true,
+            "showCreateEntityAction": false
+          },
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "drivers",
+          "widgetId": "entryCardsEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4sixc6h4zdh6",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2022-03-06T00:40:22.804Z",
+        "createdBy": {
+          "sys": {
+            "id": "1IgKbcdUoTziJMSi0uFkX5",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-06T02:29:21.845Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1IgKbcdUoTziJMSi0uFkX5",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "driver",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "country",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "number",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "winnerIn",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4sixc6h4zdh6",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2022-03-06T02:26:34.850Z",
+        "createdBy": {
+          "sys": {
+            "id": "1IgKbcdUoTziJMSi0uFkX5",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-03-06T02:26:35.563Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1IgKbcdUoTziJMSi0uFkX5",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "circuits",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "70jhw2gqxRFHtzhqI77CY5",
+        "type": "Entry",
+        "createdAt": "2022-03-06T00:12:16.799Z",
+        "updatedAt": "2022-03-06T00:22:11.253Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-03-06T00:12:46.277Z",
+        "firstPublishedAt": "2022-03-06T00:12:46.277Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Las mejores imprentas de todo Chile"
+        },
+        "description": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Encuentra a los ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "mejores proveedores graficos",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " de todo Chile en un solo lugar.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "jgOyyE8wTHyWs7MRtsfpr",
+        "type": "Entry",
+        "createdAt": "2022-03-06T00:40:51.695Z",
+        "updatedAt": "2022-03-06T00:44:46.737Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2022-03-06T00:44:46.737Z",
+        "firstPublishedAt": "2022-03-06T00:43:08.331Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "teams"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Mercedes-AMG Petronas Formula One Team"
+        },
+        "slug": {
+          "en-US": "mercedes-amg-petronas-formula-one-team"
+        },
+        "description": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Mercedes’ modern F1 revival started with the creation of a works squad for 2010 - the platform for a meteoric rise up the Grand Prix order. The team generated huge excitement from the off with the sensational return of Michael Schumacher, but headlines soon followed on track: three podiums in their debut season, all via Nico Rosberg - who then claimed a breakthrough pole/victory double at China in 2012. The following season he was paired with Lewis Hamilton, the duo going on to stage some epic title battles as the Silver Arrows swept all before them to become one of the most dominant forces of the modern F1 era. And with Hamilton now partnered by steely Finn Valtteri Bottas, Mercedes remain very much the team to beat…",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "logo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "40tHkNRcIFQI88CYQischS"
+            }
+          }
+        },
+        "car": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5W1Z6bDfLnX4FZdMZ12W1N"
+            }
+          }
+        },
+        "drivers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7nlRzKTX1imywQcVGMCHh9"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2IkueVw03CcZiQpUBNmt9K"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "7nlRzKTX1imywQcVGMCHh9",
+        "type": "Entry",
+        "createdAt": "2022-03-06T00:43:16.124Z",
+        "updatedAt": "2022-03-06T02:29:43.853Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2022-03-06T02:29:43.853Z",
+        "firstPublishedAt": "2022-03-06T00:43:43.949Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "driver"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Lewis Hamilton"
+        },
+        "country": {
+          "en-US": "United Kingdom"
+        },
+        "number": {
+          "en-US": 44
+        },
+        "winnerIn": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3ITXsGhWxGfaTxgGnhwwnw"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4va80ZYiXuZDzIRjcFihHY"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "2IkueVw03CcZiQpUBNmt9K",
+        "type": "Entry",
+        "createdAt": "2022-03-06T00:43:48.928Z",
+        "updatedAt": "2022-03-06T00:44:13.932Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2022-03-06T00:44:13.932Z",
+        "firstPublishedAt": "2022-03-06T00:44:13.932Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "driver"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "George Russell"
+        },
+        "country": {
+          "en-US": "United Kingdom"
+        },
+        "number": {
+          "en-US": 63
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "2SWrHkPHPPTfwCP0gY8O0J",
+        "type": "Entry",
+        "createdAt": "2022-03-06T01:20:26.953Z",
+        "updatedAt": "2022-03-06T01:22:10.591Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2022-03-06T01:22:10.591Z",
+        "firstPublishedAt": "2022-03-06T01:20:55.568Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "teams"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Oracle Red Bull Racing"
+        },
+        "slug": {
+          "en-US": "oracle-red-bull-racing"
+        },
+        "description": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Red Bull were no strangers to F1 - as sponsors - prior to formally entering as a works team in 2004. Nonetheless, the scale of their success over the following decade was staggering. After a first podium in 2006, the team hit their stride in 2009, claiming six victories and second in the constructors' standings. Over the next four seasons they were a tour de force, claiming consecutive title doubles between 2010 and 2013, with Sebastian Vettel emerging as the sport's youngest quadruple champion. Now their hopes of recapturing that glory lie with an equally exciting talent – one named Max Verstappen…",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "drivers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2wwc8pmDzjiy91JGfr4y0Y"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1gqHh9VjLCK6mD5KCa3VmE"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "2wwc8pmDzjiy91JGfr4y0Y",
+        "type": "Entry",
+        "createdAt": "2022-03-06T01:21:06.885Z",
+        "updatedAt": "2022-03-06T02:29:59.983Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2022-03-06T02:29:59.983Z",
+        "firstPublishedAt": "2022-03-06T01:21:40.456Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "driver"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Max Verstappen"
+        },
+        "country": {
+          "en-US": "Netherlands"
+        },
+        "number": {
+          "en-US": 1
+        },
+        "winnerIn": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4HyzIq6Ye15vSTmJ4fjPWr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "1gqHh9VjLCK6mD5KCa3VmE",
+        "type": "Entry",
+        "createdAt": "2022-03-06T01:21:43.234Z",
+        "updatedAt": "2022-03-06T01:21:57.878Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-03-06T01:21:57.878Z",
+        "firstPublishedAt": "2022-03-06T01:21:57.878Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "driver"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Sergio Perez"
+        },
+        "country": {
+          "en-US": "Mexico"
+        },
+        "number": {
+          "en-US": 11
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "4HyzIq6Ye15vSTmJ4fjPWr",
+        "type": "Entry",
+        "createdAt": "2022-03-06T02:27:04.295Z",
+        "updatedAt": "2022-03-06T02:28:36.887Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2022-03-06T02:28:36.887Z",
+        "firstPublishedAt": "2022-03-06T02:27:18.300Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "circuits"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": " Yas Marina Circuit Abu Dhabi"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "4va80ZYiXuZDzIRjcFihHY",
+        "type": "Entry",
+        "createdAt": "2022-03-06T02:27:31.069Z",
+        "updatedAt": "2022-03-06T02:28:11.764Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2022-03-06T02:28:11.764Z",
+        "firstPublishedAt": "2022-03-06T02:27:33.745Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "circuits"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Bahrain International Circuit"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "3ITXsGhWxGfaTxgGnhwwnw",
+        "type": "Entry",
+        "createdAt": "2022-03-06T02:27:54.091Z",
+        "updatedAt": "2022-03-06T02:27:57.113Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-03-06T02:27:57.113Z",
+        "firstPublishedAt": "2022-03-06T02:27:57.113Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "circuits"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": " Baku City Circuit"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "40tHkNRcIFQI88CYQischS",
+        "type": "Asset",
+        "createdAt": "2022-03-06T00:41:44.280Z",
+        "updatedAt": "2022-03-06T00:42:10.305Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2022-03-06T00:42:10.305Z",
+        "firstPublishedAt": "2022-03-06T00:42:10.305Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Mercedes Logo"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4sixc6h4zdh6/40tHkNRcIFQI88CYQischS/9c2f86602ed3cd0e62617beecdca8ca6/1582638425211.jpg",
+            "details": {
+              "size": 236474,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "1582638425211.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "id": "5W1Z6bDfLnX4FZdMZ12W1N",
+        "type": "Asset",
+        "createdAt": "2022-03-06T00:42:43.393Z",
+        "updatedAt": "2022-03-06T00:42:54.254Z",
+        "environment": {
+          "sys": {
+            "id": "spring-1",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-03-06T00:42:54.254Z",
+        "firstPublishedAt": "2022-03-06T00:42:54.254Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "image"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4sixc6h4zdh6/5W1Z6bDfLnX4FZdMZ12W1N/56459491c3b1e5f1291b857a7db8fa66/image.png",
+            "details": {
+              "size": 108132,
+              "image": {
+                "width": 658,
+                "height": 195
+              }
+            },
+            "fileName": "image.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "56DyVMY17FJldk2yUdtBs4",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4sixc6h4zdh6"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "spring-1",
+            "uuid": "10c7a251-f683-4d40-b208-c4f41b8dfbf9"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "createdAt": "2022-03-06T01:28:05Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1IgKbcdUoTziJMSi0uFkX5"
+          }
+        },
+        "updatedAt": "2022-03-06T01:28:05Z"
+      }
+    }
+  ]
+}
